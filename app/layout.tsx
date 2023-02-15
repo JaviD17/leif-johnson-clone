@@ -18,7 +18,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`${comfortaa.className} min-h-screen relative`}>
+      <body className={`${comfortaa.className} min-h-screen`}>
         <Navbar />
         {children}
         <Footer />

@@ -41,7 +41,7 @@ const Hero = () => {
         alt="hero logo"
         width={1440}
         height={800}
-        className="w-auto h-auto"
+        className="w-auto h-auto rounded-lg mt-8 shadow-xl"
       />
     </section>
   );
