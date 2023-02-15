@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Inter } from "@next/font/google";
+import { Comfortaa } from "@next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const comfortaa = Comfortaa({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -18,7 +18,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`${inter.className}`}>
+      <body className={`${comfortaa.className}`}>
         <Navbar />
         {children}
         <Footer />

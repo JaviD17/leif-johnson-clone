@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav {
+  background-color: rgb(226, 232, 240);
+  background-image: radial-gradient(
+    at 100% 0%,
+    rgb(44, 63, 135) 0,
+    transparent 100%
+  );
+}
+
+.link-card-li {
+  @apply cursor-pointer bg-slate-50 rounded-lg py-2 px-4 sm:py-4 sm:px-8 hover:underline hover:underline-offset-4;
+}

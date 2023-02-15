@@ -1,29 +1,36 @@
+import Link from "next/link";
 import Logo from "../Logo";
 import MobileLogo from "../MobileLogo";
 
-type Link = {
+type LinkType = {
   title: string;
+  href: string;
 };
 
 type Service = {
   title: string;
 };
 
-const links: Link[] = [
+const links: LinkType[] = [
   {
     title: "Shop Vehicles",
+    href: "/shop",
   },
   {
     title: "Commercial Vehicles",
+    href: "/commercial",
   },
   {
     title: "Service",
+    href: "/service",
   },
   {
     title: "Sell or Trade",
+    href: "/sell-or-trade",
   },
   {
     title: "Finance Center",
+    href: "/finance",
   },
 ];
 
@@ -52,13 +59,17 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <nav className="p-4 sm:p-8 sm:flex sm:justify-between sm:items-center">
-        <Logo />
-        <MobileLogo />
+      <nav className="p-4 sm:p-8 sm:flex sm:justify-between sm:items-center nav">
+        <Link href={"/"}>
+          <Logo />
+          <MobileLogo />
+        </Link>
 
-        <ul className="sm:flex sm:gap-20 sm:text-xl sm:font-extralight">
-          {links.map((link: Link) => (
-            <li key={link.title}>{link.title}</li>
+        <ul className="flex flex-col sm:flex-row gap-2 sm:gap-20 sm:text-xl sm:font-extralight pt-8 sm:my-0">
+          {links.map((link: LinkType) => (
+            <li key={link.title}>
+              <Link href={link.href}>{link.title}</Link>
+            </li>
           ))}
         </ul>
       </nav>

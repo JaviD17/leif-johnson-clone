@@ -10,6 +10,7 @@ const MobileLogo = () => {
         height={50}
         className="w-auto h-auto"
       />
+      <h1 className="text-xl font-extrabold mx-2">Leif Johnson Ford</h1>
     </section>
   );
 };
