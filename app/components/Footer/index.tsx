@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <section className="w-screen flex flex-col sm:flex-row gap-8 sm:gap-12 p-8 bg-[#004D71] text-slate-50">
+    <section className="flex flex-col sm:flex-row gap-8 sm:gap-12 p-8 bg-[#2C3F87] text-slate-50">
       <div>
-        <h3 className="text-lg sm:text-2xl">Leif Johnson Ford</h3>
+        <h3 className="text-lg sm:text-2xl tracking-wide">Leif Johnson Ford</h3>
         <p className="text-lg pt-2 px-2">501 E Koenig Ln, Austin, Tx 78751</p>
       </div>
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
         <div>
-          <h3 className="text-lg sm:text-2xl">Shop</h3>
+          <h3 className="text-lg sm:text-2xl tracking-wide">Shop</h3>
           <ul className="px-2 pt-2">
             <li>New</li>
             <li>Pre Owned Vehicles</li>
@@ -21,7 +21,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="text-lg sm:text-2xl">Service</h3>
+          <h3 className="text-lg sm:text-2xl tracking-wide">Service</h3>
           <ul className="px-2 pt-2">
             <li>Set Appointment</li>
             <li>Service Department</li>
@@ -30,14 +30,14 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="text-lg sm:text-2xl">Sell</h3>
+          <h3 className="text-lg sm:text-2xl tracking-wide">Sell</h3>
           <ul className="px-2 pt-2">
             <li>Sell your vehicle</li>
             <li>Value your trade</li>
           </ul>
         </div>
         <div>
-          <h3 className="text-lg sm:text-2xl">Finance</h3>
+          <h3 className="text-lg sm:text-2xl tracking-wide">Finance</h3>
           <ul className="px-2 pt-2">
             <li>Finance Application</li>
           </ul>

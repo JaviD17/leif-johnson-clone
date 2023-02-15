@@ -52,7 +52,7 @@ const services: Service[] = [
 const Navbar = () => {
   return (
     <>
-      <div className="hidden sm:block bg-[#004D71] text-slate-50 font-extralight">
+      <div className="hidden sm:block bg-[#2C3F87] text-slate-50 font-extralight">
         <ul className="sm:flex sm:gap-8 justify-end px-8 py-2">
           {services.map((service: Service) => (
             <li key={service.title}>{service.title}</li>

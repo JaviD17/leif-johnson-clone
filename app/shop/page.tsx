@@ -35,7 +35,7 @@ export default function Shop() {
         className="w-auto h-auto rounded-xl shadow-xl"
       />
 
-      <h2 className="my-4 text-lg font-extrabold">Shop</h2>
+      <h2 className="my-4 text-lg font-extrabold sm:text-2xl">Shop</h2>
 
       <ul className="flex flex-col sm:flex-row sm:justify-center items-start gap-2.5 sm:gap-4 text-[#004D71] font-bold text-sm sm:text-base">
         {shopLinks.map((item: ShopLink) => (
